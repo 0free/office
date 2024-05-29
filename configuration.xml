@@ -1,26 +1,41 @@
-<Configuration>
-  <Add OfficeClientEdition="64">
-    <Product ID="ProPlus2021Retail">
-      <Language ID="MatchOS" />
+<Configuration ID="4b92a16a-888d-4996-88af-542636b786de">
+  <Info Description="" />
+  <Add OfficeClientEdition="64" Channel="PerpetualVL2021" MigrateArch="TRUE">
+    <Product ID="ProPlus2021Volume" PIDKEY="FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH">
       <Language ID="en-us" />
-      <ExcludeApp ID="Access" />
-      <ExcludeApp ID="Excel" />
+      <Language ID="MatchOS" />
+      <Language ID="MatchPreviousMSI" />
       <ExcludeApp ID="Lync" />
-      <ExcludeApp ID="OneDrive" />
-      <ExcludeApp ID="OneNote" />
-      <ExcludeApp ID="Outlook" />
-      <ExcludeApp ID="PowerPoint" />
-      <ExcludeApp ID="Publisher" />
-      <ExcludeApp ID="Teams" />
     </Product>
-    <Product ID="ProofingTools">
-      <Language ID="MatchOS" />
+    <Product ID="VisioPro2021Volume" PIDKEY="KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4">
       <Language ID="en-us" />
+      <Language ID="MatchOS" />
+      <Language ID="MatchPreviousMSI" />
+      <ExcludeApp ID="Lync" />
+    </Product>
+    <Product ID="ProjectPro2021Volume" PIDKEY="FTNWT-C6WBT-8HMGF-K9PRX-QV9H8">
+      <Language ID="en-us" />
+      <Language ID="MatchOS" />
+      <Language ID="MatchPreviousMSI" />
+      <ExcludeApp ID="Lync" />
+    </Product>
+    <Product ID="LanguagePack">
+      <Language ID="en-us" />
+      <Language ID="MatchOS" />
+      <Language ID="MatchPreviousMSI" />
     </Product>
   </Add>
-  <Property Name="PinIconsToTaskbar" Value="FALSE" />
+  <Property Name="SharedComputerLicensing" Value="0" />
   <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
-  <Display Level="Full" AcceptEULA="TRUE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="1" />
   <Updates Enabled="TRUE" />
-  <Logging Level="Off" />
+  <RemoveMSI />
+  <AppSettings>
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="60" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
+    <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="52" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="ODT" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
+  </AppSettings>
+  <Display Level="Full" AcceptEULA="TRUE" />
 </Configuration>
