@@ -1,6 +1,7 @@
 <Configuration>
   <Add OfficeClientEdition="64">
     <Product ID="ProPlus2021Retail">
+      <Language ID="MatchOS" />
       <Language ID="en-us" />
       <ExcludeApp ID="Access" />
       <ExcludeApp ID="Excel" />
@@ -12,9 +13,14 @@
       <ExcludeApp ID="Publisher" />
       <ExcludeApp ID="Teams" />
     </Product>
+    <Product ID="ProofingTools">
+      <Language ID="MatchOS" />
+      <Language ID="en-us" />
+    </Product>
   </Add>
+  <Property Name="PinIconsToTaskbar" Value="FALSE" />
   <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
   <Display Level="Full" AcceptEULA="TRUE" />
   <Updates Enabled="TRUE" />
-  <RemoveMSI />
+  <Logging Level="Off" />
 </Configuration>
